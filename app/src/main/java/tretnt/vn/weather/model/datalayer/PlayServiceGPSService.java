@@ -222,6 +222,7 @@ public class PlayServiceGPSService implements ResultCallback<LocationSettingsRes
     }
 
     private void updateLocation(final Location location){
+        isStopGetLastLocation = true;
         countTryGetLocationNull = 0;
         executorService.execute(new Runnable() {
             @Override
