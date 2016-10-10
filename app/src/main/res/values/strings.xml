@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="warn_list_weather_empty">Empty</string>
+    <string name="retry">Retry</string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="error_cannot_connect_gps">Cannot connect to GPS system!</string>
+    <string name="success_connect_gps">Connect successful to GPS system!</string>
+    <string name="error_not_connect_gps">Not connect to GPS system!</string>
+    <string name="error_service_not_available">Service not available!</string>
+    <string name="warning_permission_required">Permission get location is required!</string>
+    <string name="warning_permission_not_grant">Permission isn\'t grant!</string>
+    <string name="error_forgot_to_init_connection">You forgot to init mGoogleApiClient</string>
+    <string name="error_getting_location_null">Location is null</string>
+    <string name="warning_enable_gps">You have to enable gps!</string>
+    <string name="city_name">City name : %1$s</string>
+    <string name="weather_description">Weather description : %1$s</string>
+    <string name="temperature">Temperature : %1$s</string>
+    <string name="min_temperature">Min temperature : %1$s</string>
+    <string name="max_temperature">Max temperature : %1$s</string>
+    <string name="humidity">Humidity : %1$s</string>
+    <string name="wind_speed">Wind speed : %1$s</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_8dp"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/fragment_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:textSize="@dimen/_20sp"
+                tools:text="USA"
+                android:textColor="@color/black"
+                android:id="@+id/fragment_detail_tv_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="@dimen/_20sp"
+                tools:text="Cloudy"
+                android:textColor="@color/black"
+                android:id="@+id/fragment_detail_tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/fragment_detail_tv_temp_min"
+                tools:text="60C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/fragment_detail_tv_temp_max"
+                tools:text="60C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/fragment_detail_tv_humidity"
+                tools:text="60%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/fragment_detail_tv_wind"
+                tools:text="10 MPH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginLeft="@dimen/_8dp"
+            tools:background="@android:color/holo_orange_dark"
+            android:id="@+id/fragment_detail_img_icon"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp" />
+
+    </LinearLayout>
+
+    <tretnt.vn.weather.view.view.InfoView
+        android:id="@+id/fragment_detail_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </tretnt.vn.weather.view.view.InfoView>
+
+
+</FrameLayout>
