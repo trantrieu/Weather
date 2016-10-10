@@ -57,6 +57,7 @@ public class DetailFragmentPresenter implements OttoManager.OttoInterface, Prese
             mvpView.showErrorForCity(mvpView.getCContext().getString(R.string.error), new NullPointerException(mvpView.getCContext().getString(R.string.error_cannot_connect_gps)), new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    mvpView.showLoadingCity();
                     stopConnectionAndStopGetLastLocation();
                     initConnectionAndGetLastLocation();
                 }
@@ -85,6 +86,7 @@ public class DetailFragmentPresenter implements OttoManager.OttoInterface, Prese
                 mvpView.showErrorForCity(e.getLocalizedMessage(), e, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        mvpView.showLoadingCity();
                         stopConnectionAndStopGetLastLocation();
                         initConnectionAndGetLastLocation();
                     }
@@ -98,6 +100,7 @@ public class DetailFragmentPresenter implements OttoManager.OttoInterface, Prese
         mvpView.showErrorForCity(throwable.getLocalizedMessage(), throwable, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mvpView.showLoadingCity();
                 stopConnectionAndStopGetLastLocation();
                 initConnectionAndGetLastLocation();
             }
@@ -110,6 +113,7 @@ public class DetailFragmentPresenter implements OttoManager.OttoInterface, Prese
         mvpView.showErrorForCity(mvpView.getCContext().getString(R.string.warning_permission_required), null, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mvpView.showLoadingCity();
                 PlayServiceGPSService.getInstance().requestLocationPermission();
             }
         });
@@ -131,6 +135,7 @@ public class DetailFragmentPresenter implements OttoManager.OttoInterface, Prese
                 mvpView.showErrorForCity(str, new IllegalStateException(str), new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        mvpView.showLoadingCity();
                         stopConnectionAndStopGetLastLocation();
                         initConnectionAndGetLastLocation();
                     }
